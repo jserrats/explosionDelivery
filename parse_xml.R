@@ -6,12 +6,12 @@ re= as_list(results)
 # list containing the vul list section of the xml. Each entry is a different vuln
 vl= re[["VULN_LIST"]]
 
+N <- length(vl)
 
-# list of ports
-for(i in vl){print(i[[4]][[1]][[2]])}
+DF <- data.frame(group=rep(NA, N), qid=rep("", N), title=rep("",N), host=rep("",N), port=rep("",N), uri=rep("",N),  authenticated=rep("",N), form_entry_point=rep("",N), params=rep("",N), findings=rep("",N), stringsAsFactors=FALSE)
+View(DF)
 
+j=0;
 for(i in 1:length(vl)){
-  port[i]<-strtoi(x = i[[4]][[1]][[2]], base = 0L)
+  DF[i,] <- list(vl[[i]]$GROUP, vl[[i]]$QID, vl[[i]]$TITLE, vl[[i]][[1]]$VULN_INSTANCE$HOST, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$PORT, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$URI, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$AUTHENTICATED, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$FORM_ENTRY_POINT, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$PARAMS, vl[[i]]$VULN_INSTANCE$VULN_INSTANCE$FINDINGS )
 }
-
-# title concat for wardcloud generation
