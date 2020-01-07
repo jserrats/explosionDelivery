@@ -1,11 +1,31 @@
 library(shiny)
 
+library(xml2)
+x = read_xml('../WAS_Results_scan_18633864.xml')
+results = xml_children(x)[[3]]
+re= as_list(results)
+
+# list containing the vul list section of the xml. Each entry is a different vuln
+vl= re[["VULN_LIST"]]
+
+# list of ports
+ports = vector("numeric",length(vl))
+
+for(i in 1:length(vl)){
+  ports[i]<-strtoi(x = vl[[i]][[4]][[1]][[2]], base = 0L)
+}
+
+
+titles <- vector(mode="character", length=10)
+for(i in 1:length(vl)){
+  ports[i]<-strtoi(x = vl[[i]][[4]][[1]][[2]], base = 0L)
+}
 
 # Define UI for app that draws a histogram ----
 ui <- fluidPage(
   
   # App title ----
-  titlePanel("Hello Shiny!"),
+  titlePanel("Qualys report summary"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -44,7 +64,9 @@ server <- function(input, output) {
   # 2. Its output type is a plot
   output$distPlot <- renderPlot({
     
-    x    <- faithful$waiting
+    View(faithful$waiting)
+    
+    x <-ports 
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     hist(x, breaks = bins, col = "#75AADB", border = "white",
