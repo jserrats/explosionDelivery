@@ -14,14 +14,26 @@ library(leaflet.extras)
 library(rgeolocate)
 
 
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
         # Show a plot of the generated distribution
         
         leafletOutput(outputId = "mymap", height =800), # output the map
-        checkboxInput("fakeData", "Fake Data", FALSE)
-
+        checkboxInput("fakeData", "Fake Data", FALSE),
+        
+        
+        hr(),
+        hr(),
+        titlePanel("Parse the XML"),
+        hr(),
+        selectInput("param","Parameter", choices=colnames(DF)),
+        mainPanel(
+            width = "100%",
+            plotOutput("barPlot")
+        )
+        
 )
 
 
@@ -35,6 +47,7 @@ server <- function(input, output) {
             
             addTiles() %>% 
             addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500),  label = ~org, color = "red")
+            
     })
     
     #Edit de view as we click the checkbox
@@ -45,16 +58,32 @@ server <- function(input, output) {
             if(input$fakeData){
                 
                 proxy <- leafletProxy("mymap", data = locationsIP)
-                proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500), group = "markers",  label = ~org, color = "red")
+               # proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500), group = "markers",  label = ~org, color = "red")
             }
             else{
                 
                 proxy <- leafletProxy("mymap", data = locationsQ)
-                proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500),  label = ~org, color = "red")
+                
             }
-
-
+        
+            proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500),  label = ~org, color = "red")
+            
+            
         })
+    
+
+    output$barPlot <- renderPlot({
+        
+        
+        barplot(table(unlist(DF[[input$param]])),
+                main=paste(toupper(substr(input$param, 1, 1)), substr(input$param, 2, nchar(input$param)), sep=""),
+                xlab="Parameters",
+                col = sample(rainbow(n=30))
+                )
+        
+    })
+    
+    
     
 }
 
