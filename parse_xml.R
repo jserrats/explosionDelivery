@@ -32,31 +32,37 @@ for(i in 1:length(vl)){
 DF <- DF[-1,]
 
 #Generate another data frame from the info of the hosts
-locations <- data.frame("status"="", "country"="", "countryCode"="", "region"="", "regionName"="", "city"="",  "zip"="", "lat"="", "lon"="", "timezone"="", "isp"="", "org"="", "as"="", "query"="", stringsAsFactors=FALSE)
+locationsIP <- data.frame("status"="", "country"="", "countryCode"="", "region"="", "regionName"="", "city"="",  "zip"="", "lat"="", "lon"="", "timezone"="", "isp"="", "org"="", "as"="", "query"="", stringsAsFactors=FALSE)
+locationsQ <- data.frame("status"="", "country"="", "countryCode"="", "region"="", "regionName"="", "city"="",  "zip"="", "lat"="", "lon"="", "timezone"="", "isp"="", "org"="", "as"="", "query"="", stringsAsFactors=FALSE)
 
 
 for (i in 1:length(ip)){
   
   list = ip_api(ip[[i]], FALSE)[[1]]
   if (list[[1]] != "Error"){
-    locations = rbind(locations,list)
+    locationsIP = rbind(locationsIP,list)
+    print("Added")
   }
   
 }
 
 
-# for (i in 1:length(DF$host)){
-#   
-#   
-#   list = ip_api(DF$host[[i]], FALSE)
-#   if (list[[1]] != "Error"){
-#     locations = rbind(locations,list[[1]])
-#   }
-#   
-#   
-#}
-
-locations = locations[-1,]
+for (i in 1:length(DF$host)){
 
 
+  list = ip_api(DF$host[[i]], FALSE)
+  if (list[[1]] != "Error"){
+    locationsQ = rbind(locationsQ,list[[1]])
+    print("Added")
+  }
+  else{
+    print("Not Added")
+  }
+
+
+}
+locationsQ = locationsQ[-1,]
+locationsIP = locationsIP[-1,]
+
+ipList = list("locationsIP","locationsQ")
 

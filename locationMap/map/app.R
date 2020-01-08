@@ -18,52 +18,44 @@ library(rgeolocate)
 ui <- fluidPage(
 
         # Show a plot of the generated distribution
-    
-    # Pendent d'afegir checkboxes
-        mainPanel(
-            leafletOutput(outputId = "mymap"), #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
-            absolutePanel(top = 60, left = 20,
-                          checkboxInput("markers", "Depth", FALSE),
-                          checkboxInput("heat", "Heatmap", FALSE))
-    )
+        
+        leafletOutput(outputId = "mymap", height =800), # output the map
+        checkboxInput("fakeData", "Fake Data", FALSE)
+
 )
 
-# Define server logic required to draw a histogram
+
 server <- function(input, output) {
     
-
+    
     
     #create the map
     output$mymap <- renderLeaflet({
-        leaflet(locations) %>% 
+        leaflet(locationsQ) %>% 
             
             addTiles() %>% 
             addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500),  label = ~org, color = "red")
     })
     
+    #Edit de view as we click the checkbox
+    proxy <-leafletProxy("mymap", data=locationsQ)
     
-    #Pendent de checkboxes
+    observe({
+            proxy %>% clearShapes()
+            if(input$fakeData){
+                
+                proxy <- leafletProxy("mymap", data = locationsIP)
+                proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500), group = "markers",  label = ~org, color = "red")
+            }
+            else{
+                
+                proxy <- leafletProxy("mymap", data = locationsQ)
+                proxy %>% addCircles(lat = ~as.double(lat), lng = ~as.double(lon), radius = sqrt(500),  label = ~org, color = "red")
+            }
+
+
+        })
     
-    #next we use the observe function to make the checkboxes dynamic. If you leave this part out you will see that the checkboxes, when clicked on the first time, display our filters...But if you then uncheck them they stay on. So we need to tell the server to update the map when the checkboxes are unchecked.  observe({
-    # proxy <- leafletProxy("mymap", data = data)
-    # proxy %>% clearMarkers()
-    # 
-    # 
-    # 
-    # 
-    # 
-    # observe({
-    #     proxy <- leafletProxy("mymap", data = data)
-    #     proxy %>% clearMarkers()
-    #     if (input$heat) {
-    #         proxy %>%  addHeatmap(lng=~longitude, lat=~latitude, intensity = ~mag, blur =  10, max = 0.05, radius = 15) 
-    #     }
-    #     else{
-    #         proxy %>% clearHeatmap()
-    #     }
-    #     
-    #     
-    # })
 }
 
 # Run the application 
