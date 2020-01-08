@@ -20,12 +20,12 @@ ui <- fluidPage(
         # Show a plot of the generated distribution
     
     # Pendent d'afegir checkboxes
-    #     mainPanel(
-    #         leafletOutput(outputId = "mymap"), #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
-    #         absolutePanel(top = 60, left = 20, 
-    #                       checkboxInput("markers", "Depth", FALSE),
-    #                       checkboxInput("heat", "Heatmap", FALSE))
-    # )
+        mainPanel(
+            leafletOutput(outputId = "mymap"), #this allows me to put the checkmarks ontop of the map to allow people to view earthquake depth or overlay a heatmap
+            absolutePanel(top = 60, left = 20,
+                          checkboxInput("markers", "Depth", FALSE),
+                          checkboxInput("heat", "Heatmap", FALSE))
+    )
 )
 
 # Define server logic required to draw a histogram
