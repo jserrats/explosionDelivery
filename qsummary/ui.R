@@ -5,6 +5,7 @@ fluidPage(
   p("First we have parsed all the data from the XML of Qualys in order to make it accessible and more readable"),
   
   DT::dataTableOutput("vulns"),
+  
   hr(),
   
   titlePanel("Bar Plot"),
@@ -12,7 +13,10 @@ fluidPage(
   selectInput("param","Parameter", choices=colnames(DF)),
   mainPanel(width = "100%", plotOutput("barPlot")),
   
+  hr(),
+  
   titlePanel("Word Cloud"),
+  p("This is a WordCloud generated from the names of all vulns detected. This allows to see visually which concepts appear more among our vulns."),
   sidebarLayout(
     # Sidebar with a slider and selection inputs
     sidebarPanel(
