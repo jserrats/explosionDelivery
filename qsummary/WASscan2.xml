@@ -1,0 +1,2034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WEB_APPLICATION_SCAN SYSTEM "https://qualysapi.qg2.apps.qualys.com/webapp_scan.dtd">
+<WEB_APPLICATION_SCAN>
+    <HEADER>
+        <NAME>Web Application Vulnerability Scan Results</NAME>
+        <GENERATION_DATETIME>2019-12-19T18:12:22Z</GENERATION_DATETIME>
+        <COMPANY_INFO>
+            <NAME>LAB TEST HUMBERT</NAME>
+            <ADDRESS>Jordi Girona, 4</ADDRESS>
+            <CITY>Barcelona</CITY>
+            <COUNTRY>Spain</COUNTRY>
+            <ZIP_CODE>08034</ZIP_CODE>
+        </COMPANY_INFO>
+        <USER_INFO>
+            <NAME>Dani Ferrer</NAME>
+            <USERNAME>abtes2df</USERNAME>
+            <ROLE/>
+        </USER_INFO>
+    </HEADER>
+    <SUMMARY>
+        <SCAN_SUMMARY>
+            <SCAN_INFO>
+                <KEY>Date</KEY>
+                <VALUE><![CDATA[2019-12-02T11:16:48Z]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Mode</KEY>
+                <VALUE><![CDATA[Vulnerability]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Type</KEY>
+                <VALUE><![CDATA[Manual]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Status</KEY>
+                <VALUE><![CDATA[COMPLETE]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Reference</KEY>
+                <VALUE><![CDATA[was/1575285359310.25528067]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Scanner Appliance</KEY>
+                <VALUE><![CDATA[External]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Web Application</KEY>
+                <VALUE><![CDATA[SecondAPP]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Virtual Host</KEY>
+                <VALUE><![CDATA[demo06.s02.sjc01.qualys.com]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Starting Port</KEY>
+                <VALUE><![CDATA[443]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Starting URI</KEY>
+                <VALUE></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Authentication</KEY>
+                <VALUE><![CDATA[None]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Duration</KEY>
+                <VALUE><![CDATA[15 minutes, and 29 seconds]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Title</KEY>
+                <VALUE><![CDATA[Web Application Vulnerability Scan - SecondAPP - 2019-12-02]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Web Application Profile</KEY>
+                <VALUE><![CDATA[Initial WAS Options]]></VALUE>
+            </SCAN_INFO>
+            <SCAN_INFO>
+                <KEY>Ignore Binary Files</KEY>
+                <VALUE><![CDATA[true]]></VALUE>
+            </SCAN_INFO>
+        </SCAN_SUMMARY>
+        <VULN_SUMMARY>
+            <VULN_GROUP>
+                <TITLE><![CDATA[XSS]]></TITLE>
+                <SEVERITY_5>2</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>0</SEVERITY_3>
+                <SEVERITY_2>0</SEVERITY_2>
+                <SEVERITY_1>2</SEVERITY_1>
+            </VULN_GROUP>
+            <VULN_GROUP>
+                <TITLE><![CDATA[SQL]]></TITLE>
+                <SEVERITY_5>2</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>0</SEVERITY_3>
+                <SEVERITY_2>0</SEVERITY_2>
+                <SEVERITY_1>0</SEVERITY_1>
+            </VULN_GROUP>
+            <VULN_GROUP>
+                <TITLE><![CDATA[PATH]]></TITLE>
+                <SEVERITY_5>0</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>0</SEVERITY_3>
+                <SEVERITY_2>11</SEVERITY_2>
+                <SEVERITY_1>0</SEVERITY_1>
+            </VULN_GROUP>
+            <VULN_GROUP>
+                <TITLE><![CDATA[INFO]]></TITLE>
+                <SEVERITY_5>0</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>18</SEVERITY_3>
+                <SEVERITY_2>3</SEVERITY_2>
+                <SEVERITY_1>10</SEVERITY_1>
+            </VULN_GROUP>
+            <VULN_GROUP>
+                <TITLE><![CDATA[IG-DIAG]]></TITLE>
+                <SEVERITY_5>0</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>0</SEVERITY_3>
+                <SEVERITY_2>0</SEVERITY_2>
+                <SEVERITY_1>0</SEVERITY_1>
+            </VULN_GROUP>
+            <VULN_GROUP>
+                <TITLE><![CDATA[IG-WEAK]]></TITLE>
+                <SEVERITY_5>0</SEVERITY_5>
+                <SEVERITY_4>0</SEVERITY_4>
+                <SEVERITY_3>0</SEVERITY_3>
+                <SEVERITY_2>0</SEVERITY_2>
+                <SEVERITY_1>0</SEVERITY_1>
+            </VULN_GROUP>
+        </VULN_SUMMARY>
+        <SENSITIVE_CONTENT_SUMMARY>
+            <SENSITIVE_CONTENT_GROUP>
+                <TITLE><![CDATA[CC]]></TITLE>
+                <TOTAL>0</TOTAL>
+            </SENSITIVE_CONTENT_GROUP>
+            <SENSITIVE_CONTENT_GROUP>
+                <TITLE><![CDATA[CUSTOM]]></TITLE>
+                <TOTAL>0</TOTAL>
+            </SENSITIVE_CONTENT_GROUP>
+            <SENSITIVE_CONTENT_GROUP>
+                <TITLE><![CDATA[SSN-US]]></TITLE>
+                <TOTAL>0</TOTAL>
+            </SENSITIVE_CONTENT_GROUP>
+        </SENSITIVE_CONTENT_SUMMARY>
+    </SUMMARY>
+    <RESULTS>
+        <VULN_LIST>
+            <VULN>
+                <GROUP><![CDATA[XSS]]></GROUP>
+                <QID>150001</QID>
+                <TITLE><![CDATA[Reflected Cross-Site Scripting (XSS) Vulnerabilities]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/parseAction.php]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[question_box]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=1%22'%3E%3Cqss%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: 1"'><qss>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA["'><qss%20a=@REQUESTID@>]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: "'><qss a=X164123632Y2Z>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=z--%3E%3Cqss%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: z--><qss>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: "'><qss `;!--=&{()}>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=%22%3E%3Cqss%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: "><qss>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[login]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=z--%3E%3Cqss%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+alCode" size="8" maxlength="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: z--><qss>      </div>
+    </div>
+  </body>
+</html>
+
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%3CEMBED%20SRC%3D%2F%2Flocalhost%2Fq.swf%20AllowScriptAccess%3Dalways%3E%3C%2FEMBED%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+th="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: <EMBED SRC=//localhost/q.swf AllowScriptAccess=always></EMBED>      </div>
+    </div>
+  </body>
+</html>
+
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=John%20%3Cscript%3E_q_q%3Drandom()%3C%2Fscript%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+"8" maxlength="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: John <script>_q_q=random()</script>      </div>
+    </div>
+  </body>
+</html>
+
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22%3E%3Cqss%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+stalCode" size="8" maxlength="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: "><qss>      </div>
+    </div>
+  </body>
+</html>
+
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[%00<script>_q=random(@REQUESTID@)</script>]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Response content-type: text/html
+
+" maxlength="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: ]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[SQL]]></GROUP>
+                <QID>150003</QID>
+                <TITLE><![CDATA[SQL Injection]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[login]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%27-qxss()-%27&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '()-''' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss `;!--=&amp;{()}>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3Cqss%20a%3DX163950980Y1Z%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss a=x163950980y1z>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><<script a=2>qss=7;//<</script>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=John%22'%3E%3Cqss%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss>'' at line 1]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[PATH]]></GROUP>
+                <QID>150004</QID>
+                <TITLE><![CDATA[Path-Based Vulnerability]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/protected/.]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /boq/protected</title>
+ </head>
+ <body>
+<h1>Index of /boq/protected</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/">Parent Directory</a>                             -   
+<img src="/icons/text.gif"]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/phpMyAdmin/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[https://demo06.s02.sjc01.qualys.com/phpMyAdmin/]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Original URL is: https://demo06.s02.sjc01.qualys.com/
+
+HTTP/1.1 200 OK]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/admin/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[https://demo06.s02.sjc01.qualys.com/admin/]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Original URL is: https://demo06.s02.sjc01.qualys.com/
+
+HTTP/1.1 200 OK]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/includes/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[https://demo06.s02.sjc01.qualys.com/includes/]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: 
+Original URL is: https://demo06.s02.sjc01.qualys.com/
+
+HTTP/1.1 200 OK]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[SQL]]></GROUP>
+                <QID>150012</QID>
+                <TITLE><![CDATA[Blind SQL Injection]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup&postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup&postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[postalCode]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup]]></PAYLOAD>
+                                <RESULT><![CDATA[This vulnerability was identified using the difference in responses for TRUE and FALSE payloads. This vulnerability is confirmed based on the difference in the response content (detected using fuzzy match).
+
+Content of all TRUE responses differ from FALSE responses (detected using fuzzy match).
+
+True condition:
+
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup&postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup&postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup
+
+BODY
+postalCode=10001'%20or%20'tpklq'%3D'tpklq&ui_mode=atm_lookup
+
+False condition:
+
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001'%20and%20'tpklq'%3D'xqlkp&ui_mode=atm_lookup&postalCode=10001'%20and%20'tpklq'%3D'xqlkp&ui_mode=atm_lookup&postalCode=10001'%20and%20'tpklq'%3D'xqlkp&ui_mode=atm_lookup
+
+BODY
+postalCode=10001'%20and%20'tpklq'%3D'xqlkp&ui_mode=atm_lookup]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[postalCode=10001'%20or%203789%3D3789%20--%20&ui_mode=atm_lookup]]></PAYLOAD>
+                                <RESULT><![CDATA[This vulnerability was identified using the difference in responses for TRUE and FALSE payloads. This vulnerability is confirmed based on the difference in the response content (detected using fuzzy match).
+
+Content of all TRUE responses differ from FALSE responses (detected using fuzzy match).
+
+True condition:
+
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001'%20or%203789%3D3789%20--%20&ui_mode=atm_lookup&postalCode=10001'%20or%203789%3D3789%20--%20&ui_mode=atm_lookup&postalCode=10001'%20or%203789%3D3789%20--%20&ui_mode=atm_lookup
+
+BODY
+postalCode=10001'%20or%203789%3D3789%20--%20&ui_mode=atm_lookup
+
+False condition:
+
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001'%20and%203789%3D1391%20--%20&ui_mode=atm_lookup&postalCode=10001'%20and%203789%3D1391%20--%20&ui_mode=atm_lookup&postalCode=10001'%20and%203789%3D1391%20--%20&ui_mode=atm_lookup
+
+BODY
+postalCode=10001'%20and%203789%3D1391%20--%20&ui_mode=atm_lookup]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150022</QID>
+                <TITLE><![CDATA[Verbose Error Message]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[ PHPSESSID]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[%00<script>_q=random(@REQUESTID@)</script>]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/index.php:3) in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[login]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss `;!--=&amp;{()}>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3Cqss%20a%3DX163950980Y1Z%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss a=x163950980y1z>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><<script a=2>qss=7;//<</script>'' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%27-qxss()-%27&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '()-''' at line 1]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=John%22'%3E%3Cqss%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '><qss>'' at line 1]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/?account=personal]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[ PHPSESSID]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[%00<script>_q=random(@REQUESTID@)</script>]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/index.php:3) in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[%00<script>_q=random(@REQUESTID@)</script>]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: Response status: 200
+  session_start(): The session id contains invalid characters, valid characters are only a-z, A-Z and 0-9 in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<br />
+<b>Warning</b>:  session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/index.php:3) in <b>/var/www/html/index.php</b> on line <b>3</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[PATH]]></GROUP>
+                <QID>150023</QID>
+                <TITLE><![CDATA[Directory Listing]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/other/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq/acct/other</title>
+ </head>
+ <body>
+<h1>Index of /boq/acct/other</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/acct/">Parent Directory</a>                             -   
+<img src="/icons/unkno]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq/acct/personal</title>
+ </head>
+ <body>
+<h1>Index of /boq/acct/personal</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/acct/">Parent Directory</a>                             -   
+<img src="/icons]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq</title>
+ </head>
+ <body>
+<h1>Index of /boq</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/">Parent Directory</a>                             -   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="abou]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq/acct/small_business</title>
+ </head>
+ <body>
+<h1>Index of /boq/acct/small_business</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/acct/">Parent Directory</a>                             -   
+<img]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/protected/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq/protected</title>
+ </head>
+ <body>
+<h1>Index of /boq/protected</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/">Parent Directory</a>                             -   
+<img src="/icons/text.gif" al]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html><head>
+  <title>Index of /boq/acct</title>
+ </head>
+ <body>
+<h1>Index of /boq/acct</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/boq/">Parent Directory</a>                             -   
+<img src="/icons/folder.gif" alt="[DIR]]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/includes/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[https://demo06.s02.sjc01.qualys.com/includes/]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: This directory was discovered during the path test phase.
+
+Original URL is: https://demo06.s02.sjc01.qualys.com/
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /includes</title>
+ </head>
+ <body>
+<h1>Index of /includes</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[DIR]"> <a href="/">Parent Directory</a>                             -   
+<img src="/icons/unknown.gif" alt="[   ]]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150079</QID>
+                <TITLE><![CDATA[Slow HTTP headers vulnerability]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/parseAction.php]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[Vulnerable to slow HTTP headers attack
+
+	Server resets timeout after accepting header data from peer.]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150081</QID>
+                <TITLE><![CDATA[X-Frame-Options header is not set]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/aboutus.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/?account=personal]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The response for this request either did not have an "X-FRAME-OPTIONS" header present or was not set to DENY or SAMEORIGIN
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[XSS]]></GROUP>
+                <QID>150084</QID>
+                <TITLE><![CDATA[Unencoded characters ]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/parseAction.php]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[question_box]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: <
+script a=4>qss=7<
+/script>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[ui_mode=question&question_box=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+<HTML>
+   <HEAD>
+      <TITLE>Get Answers to All of your Questions</TITLE>
+   <HEAD>
+   <BODY>
+      No Answers found for your question: "'><<SCRIPT a=2>qss=7;//<</SCRIPT>
+   </BODY>
+</HTML>]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[login]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[login=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E&password=password&action=login&submit=Login]]></PAYLOAD>
+                                <RESULT><![CDATA[comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+size="8" maxlength="255">
+          <input name="ui_mode" type="hidden" value="atm_lookup">
+        </form>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+      </div>
+      <div id="content">
+        Unknown User: <
+script a=4>qss=7<
+/script>      </div>
+    </div>
+  </body>
+</html>
+
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150085</QID>
+                <TITLE><![CDATA[Slow HTTP POST vulnerability]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/parseAction.php]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[Vulnerable to slow HTTP POST attack
+	Connection with partial POST body remained open for: 130983 milliseconds
+	Server resets timeout after accepting request data from peer.]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150112</QID>
+                <TITLE><![CDATA[Sensitive form field has not disabled autocomplete]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The following password field(s) in the form do not set autocomplete="off":
+(Field name: password, Field id: )
+Parent URL of form is: https://demo06.s02.sjc01.qualys.com/
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150122</QID>
+                <TITLE><![CDATA[Cookie Does Not Contain The "secure" Attribute]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[cookie[two], PHPSESSID, cookie[one], cookie[three]]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[cookie[two]=cookietwo; path=/; domain=demo06.s02.sjc01.qualys.com
+PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; path=/; domain=demo06.s02.sjc01.qualys.com
+cookie[one]=cookieone; path=/; domain=demo06.s02.sjc01.qualys.com
+cookie[three]=cookiethree; path=/; domain=demo06.s02.sjc01.qualys.com]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150123</QID>
+                <TITLE><![CDATA[Cookie Does Not Contain The "HTTPOnly" Attribute]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[cookie[two], PHPSESSID, cookie[one], cookie[three]]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[cookie[two]=cookietwo; path=/; domain=demo06.s02.sjc01.qualys.com
+PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; path=/; domain=demo06.s02.sjc01.qualys.com
+cookie[one]=cookieone; path=/; domain=demo06.s02.sjc01.qualys.com
+cookie[three]=cookiethree; path=/; domain=demo06.s02.sjc01.qualys.com]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150124</QID>
+                <TITLE><![CDATA[Clickjacking - Framable Page]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/aboutus.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/?account=personal]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[The URI was framed.
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150144</QID>
+                <TITLE><![CDATA[Form on HTTPS Submits Over HTTP]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[Form is submitted over HTTP for the following link.
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html
+Form action URI submitted over HTTP is: http://www.qualys.com/
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150150</QID>
+                <TITLE><![CDATA[HTML form containing password field(s) is served over HTTP]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>80</PORT>
+                        <URI><![CDATA[http://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[Form with credentials is served over insecure connection.
+Form action URI: http://demo06.s02.sjc01.qualys.com/
+
+Password fields on the form: password
+served on insecure (i.e. HTTP) page: http://demo06.s02.sjc01.qualys.com/
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>80</PORT>
+                        <URI><![CDATA[http://demo06.s02.sjc01.qualys.com/?account=personal]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[Form with credentials is served over insecure connection.
+Form action URI: http://demo06.s02.sjc01.qualys.com/?account=personal
+
+Password fields on the form: password
+served on insecure (i.e. HTTP) page: http://demo06.s02.sjc01.qualys.com/?account=personal
+]]></RESULT>
+                            </FINDING>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[Form with credentials is served over insecure connection.
+Form action URI: http://demo06.s02.sjc01.qualys.com/?account=business
+
+Password fields on the form: password
+served on insecure (i.e. HTTP) page: http://demo06.s02.sjc01.qualys.com/?account=business
+]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150161</QID>
+                <TITLE><![CDATA[Session Cookie Does Not Contain the "Secure" Attribute]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>443</PORT>
+                        <URI><![CDATA[https://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS><![CDATA[PHPSESSID]]></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD><![CDATA[N/A]]></PAYLOAD>
+                                <RESULT><![CDATA[PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; path=/; domain=demo06.s02.sjc01.qualys.com]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+            <VULN>
+                <GROUP><![CDATA[INFO]]></GROUP>
+                <QID>150263</QID>
+                <TITLE><![CDATA[Insecure Transport]]></TITLE>
+                <VULN_INSTANCES>
+                    <VULN_INSTANCE>
+                        <HOST><![CDATA[demo06.s02.sjc01.qualys.com]]></HOST>
+                        <PORT>80</PORT>
+                        <URI><![CDATA[http://demo06.s02.sjc01.qualys.com/]]></URI>
+                        <AUTHENTICATED><![CDATA[No Authentication]]></AUTHENTICATED>
+                        <FORM_ENTRY_POINT><![CDATA[No Form Exploited]]></FORM_ENTRY_POINT>
+                        <PARAMS></PARAMS>
+                        <FINDINGS>
+                            <FINDING>
+                                <PAYLOAD></PAYLOAD>
+                                <RESULT><![CDATA[
+Date: Mon, 02 Dec 2019 10:55:59 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+http://demo06.s02.sjc01.qualys.com/  response code: 200
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <head>
+    <title>Three Columns with CSS Tables</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+ 
+   <style type="text/css">
+
+      body, html {
+        margin:0;
+        padding:0;
+        color:#000;
+      }
+      
+      body {
+        mar]]></RESULT>
+                            </FINDING>
+                        </FINDINGS>
+                    </VULN_INSTANCE>
+                </VULN_INSTANCES>
+            </VULN>
+        </VULN_LIST>
+        <SENSITIVE_CONTENT_LIST/>
+        <INFO_LIST>
+            <INFO>
+                <QID>150210</QID>
+                <TITLE><![CDATA[Information Disclosure via Response Header]]></TITLE>
+                <RESULT><![CDATA[One or more response headers disclosing information about the application platform were present on the following pages:
+(Only first 50 such pages are reported)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+Server: Apache/2.0.52 (Red Hat)
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php response code: 302
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150115</QID>
+                <TITLE><![CDATA[Authentication Form found]]></TITLE>
+                <RESULT><![CDATA[Authentication form found at: https://demo06.s02.sjc01.qualys.com/
+ Action uri: https://demo06.s02.sjc01.qualys.com/
+ Fields: login, password, action, submit
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150208</QID>
+                <TITLE><![CDATA[Missing header: Referrer-Policy]]></TITLE>
+                <RESULT><![CDATA[
+Referrer-Policy: Header missing
+Response headers on link: GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Date: Mon, 02 Dec 2019 10:55:57 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[three]=cookiethree; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[two]=cookietwo; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[one]=cookieone; domain=demo06.s02.sjc01.qualys.com; path=/
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150054</QID>
+                <TITLE><![CDATA[Email Addresses Collected]]></TITLE>
+                <RESULT><![CDATA[Number of emails: 1
+jsmith@example.com first seen at https://demo06.s02.sjc01.qualys.com/boq/aboutus.html
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>6</QID>
+                <TITLE><![CDATA[DNS Host Name]]></TITLE>
+                <RESULT><![CDATA[#table
+IP_address Host_name
+
+64.41.200.236 demo06.s02.sjc01.qualys.com
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150021</QID>
+                <TITLE><![CDATA[Scan Diagnostics]]></TITLE>
+                <RESULT><![CDATA[Loaded 0 blacklist entries.
+Loaded 0 whitelist entries.
+HTML form authentication unavailable, no WEBAPP entry found
+Batch #0 VirtualHostDiscovery: estimated time < 1 minute (70 tests, 0 inputs)
+VirtualHostDiscovery: 70 vulnsigs tests, completed 70  requests, 3 seconds. Completed 70 requests of 70 estimated requests (100%). All tests completed.
+Batch #0 CMSDetection: estimated time < 1 minute (1 tests, 1 inputs)
+[CMSDetection phase] : No potential CMS found. Aborting the CMS Detection phaseCMSDetection: 1 vulnsigs tests, completed 38  requests, 1 seconds. Completed 38 requests of 38 estimated requests (100%). All tests completed.
+Collected 30 links overall in 0 hours 7 minutes duration.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 0) + files:(0 x 0) +  directories:(9 x 5) +  paths:(0 x 5) = total (45) 
+Batch #0 WS Directory Path manipulation: estimated time < 1 minute (9 tests, 5 inputs)
+WS Directory Path manipulation: 9 vulnsigs tests, completed 27  requests, 0 seconds. Completed 27 requests of 45 estimated requests (60%). All tests completed.
+Batch #0 WS enumeration: estimated time < 1 minute (11 tests, 28 inputs)
+WS enumeration: 11 vulnsigs tests, completed 95  requests, 0 seconds. Completed 95 requests of 308 estimated requests (30.8442%). All tests completed.
+Batch #1 URI parameter manipulation (no auth): estimated time < 1 minute (60 tests, 2 inputs)
+Batch #1 URI parameter manipulation (no auth): 60 vulnsigs tests, completed 118  requests, 0 seconds. Completed 118 requests of 120 estimated requests (98.3333%). All tests completed.
+Batch #1 Form parameter manipulation (no auth): estimated time < 1 minute (60 tests, 8 inputs)
+Batch #1 Form parameter manipulation (no auth): 60 vulnsigs tests, completed 494  requests, 2 seconds. Completed 494 requests of 480 estimated requests (102.917%). All tests completed.
+Batch #1 URI blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 2 inputs)
+Batch #1 URI blind SQL manipulation (no auth): 8 vulnsigs tests, completed 32  requests, 0 seconds. Completed 32 requests of 48 estimated requests (66.6667%). All tests completed.
+Batch #1 Form blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 8 inputs)
+Batch #1 Form blind SQL manipulation (no auth): 8 vulnsigs tests, completed 198  requests, 0 seconds. Completed 198 requests of 192 estimated requests (103.125%). All tests completed.
+Batch #1 URI parameter time-based tests (no auth): estimated time < 1 minute (14 tests, 2 inputs)
+Batch #1 URI parameter time-based tests (no auth): 14 vulnsigs tests, completed 28  requests, 1 seconds. Completed 28 requests of 28 estimated requests (100%). All tests completed.
+Batch #1 Form field time-based tests (no auth): estimated time < 1 minute (14 tests, 8 inputs)
+Batch #1 Form field time-based tests (no auth): 14 vulnsigs tests, completed 112  requests, 0 seconds. Completed 112 requests of 112 estimated requests (100%). All tests completed.
+Batch #1 URI parameter time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 2 inputs)
+Batch #1 URI parameter time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 2  requests, 0 seconds. Completed 2 requests of 2 estimated requests (100%). All tests completed.
+Batch #1 Form field time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 8 inputs)
+Batch #1 Form field time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 8  requests, 0 seconds. Completed 8 requests of 8 estimated requests (100%). All tests completed.
+Batch #2 URI parameter manipulation (no auth): estimated time < 1 minute (60 tests, 1 inputs)
+Batch #2 URI parameter manipulation (no auth): 60 vulnsigs tests, completed 118  requests, 0 seconds. Completed 118 requests of 60 estimated requests (196.667%). All tests completed.
+Batch #2 URI blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 1 inputs)
+Batch #2 URI blind SQL manipulation (no auth): 8 vulnsigs tests, completed 16  requests, 0 seconds. Completed 16 requests of 24 estimated requests (66.6667%). All tests completed.
+Batch #2 URI parameter time-based tests (no auth): estimated time < 1 minute (14 tests, 1 inputs)
+Batch #2 URI parameter time-based tests (no auth): 14 vulnsigs tests, completed 14  requests, 0 seconds. Completed 14 requests of 14 estimated requests (100%). All tests completed.
+Batch #2 URI parameter time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 1 inputs)
+Batch #2 URI parameter time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 1  requests, 0 seconds. Completed 1 requests of 1 estimated requests (100%). All tests completed.
+Batch #4 WebCgiOob: estimated time < 1 minute (1 tests, 1 inputs)
+Batch #4 WebCgiOob: 1 vulnsigs tests, completed 0  requests, 0 seconds. Completed 0 requests of 5 estimated requests (0%). All tests completed.
+No XML requests found. Skipping XXE tests.
+Batch #4 DOM XSS exploitation: estimated time < 1 minute (4 tests, 0 inputs)
+Batch #4 DOM XSS exploitation: 4 vulnsigs tests, completed 0  requests, 1 seconds. No tests to execute.
+Batch #4 HTTP call manipulation: estimated time < 1 minute (35 tests, 0 inputs)
+Batch #4 HTTP call manipulation: 35 vulnsigs tests, completed 0  requests, 0 seconds. No tests to execute.
+Batch #4 Open Redirect analysis: estimated time < 1 minute (3 tests, 2 inputs)
+Batch #4 Open Redirect analysis: 3 vulnsigs tests, completed 2  requests, 4 seconds. Completed 2 requests of 2 estimated requests (100%). All tests completed.
+CSRF tests will not be launched because the scan is not successfully authenticated.
+Batch #4 File Inclusion analysis: estimated time < 1 minute (1 tests, 30 inputs)
+Batch #4 File Inclusion analysis: 1 vulnsigs tests, completed 0  requests, 0 seconds. Completed 0 requests of 30 estimated requests (0%). All tests completed.
+Batch #4 Cookie manipulation: estimated time < 1 minute (39 tests, 4 inputs)
+Batch #4 Cookie manipulation: 39 vulnsigs tests, completed 1596  requests, 3 seconds. Completed 1596 requests of 1456 estimated requests (109.615%). XSS optimization removed 728 links. All tests completed.
+Batch #4 Header manipulation: estimated time < 1 minute (39 tests, 28 inputs)
+Batch #4 Header manipulation: 39 vulnsigs tests, completed 660  requests, 1 seconds. Completed 660 requests of 1456 estimated requests (45.3297%). XSS optimization removed 728 links. All tests completed.
+Batch #4 shell shock detector: estimated time < 1 minute (1 tests, 28 inputs)
+Batch #4 shell shock detector: 1 vulnsigs tests, completed 30  requests, 0 seconds. Completed 30 requests of 28 estimated requests (107.143%). All tests completed.
+Batch #4 shell shock detector(form): estimated time < 1 minute (1 tests, 2 inputs)
+Batch #4 shell shock detector(form): 1 vulnsigs tests, completed 2  requests, 0 seconds. Completed 2 requests of 2 estimated requests (100%). All tests completed.
+Batch #4 httpoxy detector: estimated time < 1 minute (1 tests, 28 inputs)
+Batch #4 httpoxy detector: 1 vulnsigs tests, completed 28  requests, 0 seconds. Completed 28 requests of 28 estimated requests (100%). All tests completed.
+Batch #4 httpoxy detector(form): estimated time < 1 minute (1 tests, 2 inputs)
+Batch #4 httpoxy detector(form): 1 vulnsigs tests, completed 2  requests, 0 seconds. Completed 2 requests of 2 estimated requests (100%). All tests completed.
+Batch #4 Struts timebased detector: estimated time < 1 minute (1 tests, 28 inputs)
+Batch #4 Struts timebased detector: 1 vulnsigs tests, completed 28  requests, 1 seconds. Completed 28 requests of 28 estimated requests (100%). All tests completed.
+Batch #4 Login Brute Force manipulation: estimated time < 1 minute (176 tests, 1 inputs)
+Batch #4 Login Brute Force manipulation: 176 vulnsigs tests, completed 176  requests, 232 seconds. Completed 176 requests of 176 estimated requests (100%). All tests completed.
+Batch #4 insecurely served cred forms detector (no auth): estimated time < 1 minute (1 tests, 3 inputs)
+Batch #4 insecurely served cred forms detector (no auth): 1 vulnsigs tests, completed 3  requests, 0 seconds. Completed 3 requests of 3 estimated requests (100%). All tests completed.
+Batch #5 HTTP Time Bandit: estimated time < 1 minute (1 tests, 10 inputs)
+Batch #5 HTTP Time Bandit: 1 vulnsigs tests, completed 200  requests, 0 seconds. No tests to execute.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 0) + files:(0 x 0) +  directories:(4 x 5) +  paths:(11 x 5) = total (75) 
+Batch #5 Path XSS manipulation: estimated time < 1 minute (15 tests, 5 inputs)
+Batch #5 Path XSS manipulation: 15 vulnsigs tests, completed 44  requests, 1 seconds. Completed 44 requests of 75 estimated requests (58.6667%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 0) + files:(0 x 0) +  directories:(1 x 5) +  paths:(0 x 5) = total (5) 
+Batch #5 Tomcat Vuln manipulation: estimated time < 1 minute (1 tests, 5 inputs)
+Batch #5 Tomcat Vuln manipulation: 1 vulnsigs tests, completed 3  requests, 0 seconds. Completed 3 requests of 5 estimated requests (60%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 0) + files:(0 x 0) +  directories:(16 x 5) +  paths:(0 x 5) = total (80) 
+Batch #5 Time based path manipulation: estimated time < 1 minute (16 tests, 32 inputs)
+Batch #5 Time based path manipulation: 16 vulnsigs tests, completed 64  requests, 160 seconds. Completed 64 requests of 80 estimated requests (80%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(4 x 0) + files:(18 x 0) +  directories:(123 x 5) +  paths:(16 x 5) = total (695) 
+Batch #5 Path manipulation: estimated time < 1 minute (161 tests, 5 inputs)
+Batch #5 Path manipulation: 161 vulnsigs tests, completed 378  requests, 0 seconds. Completed 378 requests of 695 estimated requests (54.3885%). All tests completed.
+Batch #5 WebCgiGeneric: estimated time < 1 minute (17 tests, 1 inputs)
+Batch #5 WebCgiGeneric: 17 vulnsigs tests, completed 28  requests, 0 seconds. Completed 28 requests of 155 estimated requests (18.0645%). All tests completed.
+Total requests made: 4697
+Average server response time: 0.04 seconds
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150152</QID>
+                <TITLE><![CDATA[Forms Crawled]]></TITLE>
+                <RESULT><![CDATA[Total internal forms seen (this count includes duplicate forms): 2
+
+Crawled forms (Total: 2)
+NOTE: This does not include authentication forms. Authentication forms are reported separately in QID 150115
+Form #:1 Action URI:https://demo06.s02.sjc01.qualys.com/boq/parseAction.php
+Form Fields: ui_mode, question_box
+
+Form #:2 Action URI:https://demo06.s02.sjc01.qualys.com/boq/parseAction.php
+Form Fields: postalCode, ui_mode
+
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150126</QID>
+                <TITLE><![CDATA[Links With High Resource Consumption]]></TITLE>
+                <RESULT><![CDATA[17333.000000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php
+60643.500000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/aboutus.html
+72799.400000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1
+100125.000000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html
+152250.000000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html
+152500.000000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/tou.html
+183096.600000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/
+242666.600000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html
+260000.000000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html
+358499.800000 bytes/sec https://demo06.s02.sjc01.qualys.com/boq/acct/personal/
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150028</QID>
+                <TITLE><![CDATA[Cookies Collected]]></TITLE>
+                <RESULT><![CDATA[Total cookies: 4
+PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; path=/ First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[three]=cookiethree First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[two]=cookietwo First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[one]=cookieone First set at URL: https://demo06.s02.sjc01.qualys.com/
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150099</QID>
+                <TITLE><![CDATA[Cookies Issued Without User Consent]]></TITLE>
+                <RESULT><![CDATA[Total cookies: 4
+PHPSESSID=c28bbc4b825fdee525d29fac76a4ced1; path=/ First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[three]=cookiethree First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[two]=cookietwo First set at URL: https://demo06.s02.sjc01.qualys.com/
+cookie[one]=cookieone First set at URL: https://demo06.s02.sjc01.qualys.com/
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150018</QID>
+                <TITLE><![CDATA[Connection Error Occurred During Web Application Scan]]></TITLE>
+                <RESULT><![CDATA[
+Total number of unique links that encountered timeout errors: 1
+Links with highest number of timeouts:
+   1 https://demo06.s02.sjc01.qualys.com/boq/acct/other/ThisLinkWillTimeOut.php
+
+Phase wise summary of timeout and connection errors encountered: 
+ePhaseCrawl                        :          1         0
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150262</QID>
+                <TITLE><![CDATA[Missing header: Feature-Policy]]></TITLE>
+                <RESULT><![CDATA[
+Feature-Policy: Header missing
+Response headers on link: GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Date: Mon, 02 Dec 2019 10:55:57 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[three]=cookiethree; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[two]=cookietwo; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[one]=cookieone; domain=demo06.s02.sjc01.qualys.com; path=/
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150135</QID>
+                <TITLE><![CDATA[HTTP Strict Transport Security (HSTS) header missing/misconfigured.]]></TITLE>
+                <RESULT><![CDATA[Strict Transport Security header missing for 
+https://demo06.s02.sjc01.qualys.com/
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150010</QID>
+                <TITLE><![CDATA[External Links Discovered]]></TITLE>
+                <RESULT><![CDATA[Number of links: 2
+http://www.fdic.gov/
+http://www.qualys.com/
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150042</QID>
+                <TITLE><![CDATA[Server Returns HTTP 500 Message For Request]]></TITLE>
+                <RESULT><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150202</QID>
+                <TITLE><![CDATA[Missing header: X-Content-Type-Options]]></TITLE>
+                <RESULT><![CDATA[
+X-Content-Type-Options: Header missing
+Response headers on link: GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Date: Mon, 02 Dec 2019 10:55:57 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[three]=cookiethree; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[two]=cookietwo; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[one]=cookieone; domain=demo06.s02.sjc01.qualys.com; path=/
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>45017</QID>
+                <TITLE><![CDATA[Operating System Detected]]></TITLE>
+                <RESULT><![CDATA[Linux_2.4-2.6_/_Embedded_Device_/_F5_Networks_Big-IP_/_Integrated_Dell_Remote_Access_Controller_/_Linux_2.4-2.6_/_Embedded_Device_/_F5_Networks_Big-IP TCP/IP_Fingerprint M1141:7081::443
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150041</QID>
+                <TITLE><![CDATA[Links Rejected]]></TITLE>
+                <RESULT><![CDATA[https://demo06.s02.sjc01.qualys.com/boq/protected/Registered_Users.doc
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150206</QID>
+                <TITLE><![CDATA[Content-Security-Policy Not Implemented]]></TITLE>
+                <RESULT><![CDATA[
+Content-Security-Policy: Header missing
+Response headers on link: GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Date: Mon, 02 Dec 2019 10:55:57 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[three]=cookiethree; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[two]=cookietwo; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[one]=cookieone; domain=demo06.s02.sjc01.qualys.com; path=/
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150204</QID>
+                <TITLE><![CDATA[Missing header: X-XSS-Protection]]></TITLE>
+                <RESULT><![CDATA[
+X-Xss-Protection: Header missing
+Response headers on link: GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+Date: Mon, 02 Dec 2019 10:55:57 GMT
+Server: Apache/2.0.52 (Red Hat)
+X-Powered-By: PHP/4.3.9
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Length: 4509
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=67eb6cba2ac791695451d7b882ea3ab5; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[three]=cookiethree; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[two]=cookietwo; domain=demo06.s02.sjc01.qualys.com; path=/
+Set-Cookie: cookie[one]=cookieone; domain=demo06.s02.sjc01.qualys.com; path=/
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET https://demo06.s02.sjc01.qualys.com/ response code: 200
+POST https://demo06.s02.sjc01.qualys.com/boq/parseAction.php response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=personal response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.php?postalCode=10001&ui_mode=atm_lookup response code: 200
+GET https://demo06.s02.sjc01.qualys.com/?account=business response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/aboutus.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/tou.html response code: 404
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/personal/ response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html response code: 200
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php response code: 500
+GET https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1 response code: 200
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150009</QID>
+                <TITLE><![CDATA[Links Crawled]]></TITLE>
+                <RESULT><![CDATA[Duration of crawl phase (seconds): 445.00
+Number of links: 28
+(This number excludes form requests and links re-requested during authentication.)
+
+https://demo06.s02.sjc01.qualys.com/
+https://demo06.s02.sjc01.qualys.com/?account=business
+https://demo06.s02.sjc01.qualys.com/?account=personal
+https://demo06.s02.sjc01.qualys.com/boq/
+https://demo06.s02.sjc01.qualys.com/boq/aboutus.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/
+https://demo06.s02.sjc01.qualys.com/boq/acct/other/
+https://demo06.s02.sjc01.qualys.com/boq/acct/other/WillProduce500Error.php
+https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php
+https://demo06.s02.sjc01.qualys.com/boq/acct/other/syntaxerror.php?i=1
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/autoloans.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/checking.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/creditcard.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/mortgage.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/personal/savings.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/checking.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/creditcards.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/savings.html
+https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/smbloans.html
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.orig
+https://demo06.s02.sjc01.qualys.com/boq/parseAction.php
+https://demo06.s02.sjc01.qualys.com/boq/privacypolicy.html
+https://demo06.s02.sjc01.qualys.com/boq/protected/
+https://demo06.s02.sjc01.qualys.com/boq/protected/READ_ME.html
+https://demo06.s02.sjc01.qualys.com/boq/tou.html
+]]></RESULT>
+            </INFO>
+            <INFO>
+                <QID>150014</QID>
+                <TITLE><![CDATA[External Form Actions Discovered]]></TITLE>
+                <RESULT><![CDATA[Number of forms: 1
+Form on page https://demo06.s02.sjc01.qualys.com/boq/acct/small_business/more.html submits to http://www.qualys.com/
+]]></RESULT>
+            </INFO>
+        </INFO_LIST>
+    </RESULTS>
+</WEB_APPLICATION_SCAN>
