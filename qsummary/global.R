@@ -2,6 +2,12 @@ library(tm)
 library(wordcloud)
 library(memoise)
 library(xml2)
+library(DT)
+library(shiny)
+library(leaflet)
+library(dplyr)
+library(leaflet.extras)
+library(rgeolocate)
 
 # Using "memoise" to automatically cache the results
 getTermMatrix <- memoise(function(stuff) {
