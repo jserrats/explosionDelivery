@@ -70,7 +70,7 @@ for (i in 1:length(DF$host)){
     #print("Q Added")
   }
   else{
-    print("Q Not Added")
+    #print("Q Not Added")
   }
   
   
