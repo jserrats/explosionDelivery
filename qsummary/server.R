@@ -20,4 +20,9 @@ function(input, output, session) {
                   min.freq = input$freq, max.words=input$max,
                   colors=brewer.pal(8, "Dark2"))
   })
+  
+  output$vulns <- DT::renderDataTable({
+    DT::datatable(DF)
+  })
+  
 }

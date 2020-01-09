@@ -15,7 +15,11 @@ fluidPage(
     
     # Show Word Cloud
     mainPanel(
-      plotOutput("plot")
+      plotOutput("plot"),
+      hr(),
+      DT::dataTableOutput("vulns")
     )
   )
+ 
+  
 )
