@@ -64,13 +64,13 @@ for (i in 1:length(ip)){
 for (i in 1:length(DF$host)){
   
   list = ip_api(DF$host[[i]], FALSE)
-  if (list[[1]] != "Error"){
-    print(list[[1]])
+  if (list[[1]][[1]] != "Error"){
+    
     locationsQ = rbind(locationsQ,list[[1]])
     #print("Q Added")
   }
   else{
-    #print("Q Not Added")
+    print("Q Not Added")
   }
   
   
